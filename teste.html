@@ -14,11 +14,13 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success nav-style fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-success nav-style fixed-top"
+    >
       <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="#">
           <img
-            src="./assets/logo-edit.jpg"
+            src="./assets/logoHC.png"
             alt="Hotel California"
             class="img-fluid logo-img"
             style="height: 50px"
@@ -64,8 +66,14 @@
 
     <!-- Hero -->
     <section id="inicio" class="bg-dark text-light text-center py-5">
+      <video autoplay muted loop playsinline id="bg-video">
+        <source src="./assets/forestvideos.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo em HTML5.
+      </video>
       <div class="container">
-        <h1 class="display-4 fw-bold">Bem-vindo ao Hotel California</h1>
+        <img src="./assets/logoHC.png" style="width: 300px" />
+
+        <h1 class="display-6 fw-bold">Bem-vindo ao Hotel California</h1>
         <p class="lead">Um lugar adorável para você relaxar e aproveitar</p>
         <a href="#acomodacoes" class="btn btn-success btn-lg mt-3"
           >Ver Acomodações</a
@@ -100,7 +108,10 @@
     <section id="acomodacoes" class="bg-light py-5">
       <div class="container text-center">
         <h2 class="text-center fw-bold mb-2">Acomodações</h2>
-        <p class="fs-5">Dispomos de três variedades de quartos, abaixo você pode verificar cada uma delas</p>
+        <p class="fs-5">
+          Dispomos de três variedades de quartos, abaixo você pode verificar
+          cada uma delas
+        </p>
         <div class="row g-4">
           <!-- Ínicio Carrosel -->
           <div id="carouselExampleIndicators" class="carousel slide">
@@ -130,22 +141,34 @@
               <div class="carousel-item active">
                 <img src="./assets/4.png" class="d-block w-100" alt="..." />
                 <h1>Winter</h1>
-                <p>Um quarto com capacidade para quatro pessoas garantindo uma conexão indescritivel com a natureza <br>
-                Com uma paisagem sensacional o quarto conta com uma cama de casal e um sofá cama que acomoda até duas pessoas
+                <p>
+                  Um quarto com capacidade para quatro pessoas garantindo uma
+                  conexão indescritivel com a natureza <br />
+                  Com uma paisagem sensacional o quarto conta com uma cama de
+                  casal e um sofá cama que acomoda até duas pessoas
                 </p>
               </div>
               <div class="carousel-item">
                 <img src="./assets/3.png" class="d-block w-100" alt="..." />
                 <h1>Forrest</h1>
-                <p>Um quarto com capacidade para quatro pessoas que te coloca em uma aventura entre as árvores e a floresta. <br>
-                    Este quarto é perfeito para os aventureiros de plantão que adoram explorar e conquistar...
+                <p>
+                  Um quarto com capacidade para quatro pessoas que te coloca em
+                  uma aventura entre as árvores e a floresta. <br />
+                  Este quarto é perfeito para os aventureiros de plantão que
+                  adoram explorar e conquistar...
                 </p>
               </div>
               <div class="carousel-item">
                 <img src="./assets/5.png" class="d-block w-100" alt="..." />
                 <h1>Deluxe Room</h1>
-                <p>Um quarto com capacidade para seis pessoas que garante o melhor do Hotel California, além de um conforto máximo interno <br>
-                O Deluxe Room conta com uma varanda incrível, com uma paisagem da 8° maravilha do mundo, área de churrasco <br>e um telescópio para observar as estrelas ao entardecer</p>
+                <p>
+                  Um quarto com capacidade para seis pessoas que garante o
+                  melhor do Hotel California, além de um conforto máximo interno
+                  <br />
+                  O Deluxe Room conta com uma varanda incrível, com uma paisagem
+                  da 8° maravilha do mundo, área de churrasco <br />e um
+                  telescópio para observar as estrelas ao entardecer
+                </p>
               </div>
             </div>
             <button
@@ -175,67 +198,94 @@
           </div>
 
           <!-- Fim Carrosel -->
-           <p class="text-success fs-5">Todos os quartos contam com frigobar, e serviços de manutenção como: limpeza, e reposição de produtos</p>
+          <p class="text-success fs-5">
+            Todos os quartos contam com frigobar, e serviços de manutenção como:
+            limpeza, e reposição de produtos
+          </p>
         </div>
       </div>
     </section>
 
-
     <!-- Ínicio Atrações -->
-<section class="py-5" id="atracoes" style="background-color: #1e5631;">
-  <div class="container">
-    <h2 class="text-center text-white mb-5">Nossas Atrações</h2>
-    <div class="row g-4">
-      
-      <!-- Card 1: Escaladas nas Montanhas -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="./assets/escalada.png" class="card-img-top" alt="Escaladas nas Montanhas">
-          <div class="card-body">
-            <h5 class="card-title">Escaladas nas Montanhas</h5>
-            <p class="card-text">Explore as montanhas de Moat Cailin com nossos guias experientes e viva uma aventura inesquecível.</p>
+    <section class="py-5" id="atracoes" style="background-color: #1e5631">
+      <div class="container">
+        <h2 class="text-center text-white mb-5">Nossas Atrações</h2>
+        <div class="row g-4">
+          <!-- Card 1: Escaladas nas Montanhas -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./assets/escalada.png"
+                class="card-img-top"
+                alt="Escaladas nas Montanhas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Escaladas nas Montanhas</h5>
+                <p class="card-text">
+                  Explore as montanhas de Moat Cailin com nossos guias
+                  experientes e viva uma aventura inesquecível.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Piscinas Termais -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./assets/piscina.png"
+                class="card-img-top"
+                alt="Piscinas Termais"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Piscinas Termais</h5>
+                <p class="card-text">
+                  Relaxe nas nossas piscinas aquecidas naturalmente, com vista
+                  panorâmica para a natureza.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Passeios a Cavalo -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./assets/passeio-cavalo.png"
+                class="card-img-top"
+                alt="Passeios a Cavalo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Passeios a Cavalo</h5>
+                <p class="card-text">
+                  Percorra trilhas encantadoras e descubra paisagens únicas
+                  montado em cavalos dóceis e treinados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Degustação Gastronômica -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./assets/degustacao.png"
+                class="card-img-top"
+                alt="Degustação Gastronômica"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Degustação Gastronômica</h5>
+                <p class="card-text">
+                  Aprecie pratos exclusivos preparados com ingredientes frescos
+                  da região.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Card 2: Piscinas Termais -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="./assets/piscina.png" class="card-img-top" alt="Piscinas Termais">
-          <div class="card-body">
-            <h5 class="card-title">Piscinas Termais</h5>
-            <p class="card-text">Relaxe nas nossas piscinas aquecidas naturalmente, com vista panorâmica para a natureza.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3: Passeios a Cavalo -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="./assets/passeio-cavalo.png" class="card-img-top" alt="Passeios a Cavalo">
-          <div class="card-body">
-            <h5 class="card-title">Passeios a Cavalo</h5>
-            <p class="card-text">Percorra trilhas encantadoras e descubra paisagens únicas montado em cavalos dóceis e treinados.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4: Degustação Gastronômica -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="./assets/degustacao.png" class="card-img-top" alt="Degustação Gastronômica">
-          <div class="card-body">
-            <h5 class="card-title">Degustação Gastronômica</h5>
-            <p class="card-text">Aprecie pratos exclusivos preparados com ingredientes frescos da região.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- Fim das atrações -->
-
+    </section>
+    <!-- Fim das atrações -->
 
     <!-- Contato -->
     <section id="contato" class="container py-5">
@@ -279,72 +329,121 @@
     <!-- Ínicio FAQ -->
 
     <!-- Seção FAQ - Hotel California -->
-<section id="faq" class="py-5" style="background-color: #ffffff;">
-  <div class="container">
-    <h2 class="text-center mb-5">Perguntas Frequentes</h2>
-    
-    <div class="accordion" id="faqAccordion">
+    <section id="faq" class="py-5" style="background-color: #ffffff">
+      <div class="container">
+        <h2 class="text-center mb-5">Perguntas Frequentes</h2>
 
-      <!-- Item 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq-heading-1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-controls="faq-1">
-            Como faço uma reserva?
-          </button>
-        </h2>
-        <div id="faq-1" class="accordion-collapse collapse show" aria-labelledby="faq-heading-1" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Você pode fazer sua reserva diretamente em nosso portal online, selecionando a data, tipo de quarto e número de hóspedes. Também aceitamos reservas por telefone e WhatsApp.
+        <div class="accordion" id="faqAccordion">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-heading-1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-1"
+                aria-controls="faq-1"
+              >
+                Como faço uma reserva?
+              </button>
+            </h2>
+            <div
+              id="faq-1"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faq-heading-1"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Você pode fazer sua reserva diretamente em nosso portal online,
+                selecionando a data, tipo de quarto e número de hóspedes. Também
+                aceitamos reservas por telefone e WhatsApp.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-heading-2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-2"
+                aria-expanded="false"
+                aria-controls="faq-2"
+              >
+                Quais formas de pagamento são aceitas?
+              </button>
+            </h2>
+            <div
+              id="faq-2"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-heading-2"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Aceitamos cartões de crédito, débito, Pix e pagamentos em
+                dinheiro diretamente na recepção.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-heading-3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-3"
+                aria-expanded="false"
+                aria-controls="faq-3"
+              >
+                O hotel é pet-friendly?
+              </button>
+            </h2>
+            <div
+              id="faq-3"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-heading-3"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sim! Aceitamos pets de pequeno e médio porte, mediante aviso
+                prévio no momento da reserva.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-heading-4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-4"
+                aria-expanded="false"
+                aria-controls="faq-4"
+              >
+                Existe estacionamento no local?
+              </button>
+            </h2>
+            <div
+              id="faq-4"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-heading-4"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sim, oferecemos estacionamento gratuito para todos os hóspedes,
+                com vagas cobertas e monitoradas.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Item 2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq-heading-2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
-            Quais formas de pagamento são aceitas?
-          </button>
-        </h2>
-        <div id="faq-2" class="accordion-collapse collapse" aria-labelledby="faq-heading-2" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Aceitamos cartões de crédito, débito, Pix e pagamentos em dinheiro diretamente na recepção.
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq-heading-3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
-            O hotel é pet-friendly?
-          </button>
-        </h2>
-        <div id="faq-3" class="accordion-collapse collapse" aria-labelledby="faq-heading-3" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Sim! Aceitamos pets de pequeno e médio porte, mediante aviso prévio no momento da reserva.
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq-heading-4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
-            Existe estacionamento no local?
-          </button>
-        </h2>
-        <div id="faq-4" class="accordion-collapse collapse" aria-labelledby="faq-heading-4" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Sim, oferecemos estacionamento gratuito para todos os hóspedes, com vagas cobertas e monitoradas.
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Fim FAQ -->
 

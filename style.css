@@ -34,12 +34,32 @@ h1, h2, h3, h4, h5 {
 
 /* ====== Hero ====== */
 #inicio {
-  background: url('./assets/1.png') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 1;
+}
+
+#inicio #bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.8; 
+  pointer-events: none; /* evita interação com o vídeo */
+}
+
+#inicio .container {
+  position: relative;
+  z-index: 1;
 }
 
 #inicio h1, #inicio p {
